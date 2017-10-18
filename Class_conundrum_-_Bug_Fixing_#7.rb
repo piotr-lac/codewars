@@ -7,26 +7,26 @@
 # e.g. javascript myList.add(0).add(1) python my_list.add(0).add(1) ruby my_list.add(0).add(1)
 
 class List
-	@@counter=0
-  def initialize(type)
-    @type=type
+  attr_reader :counter, :items
+  def initialize(t)
+    @type=t
     @items=[]
-    
+    @counter=0
+    self
   end
   
-  def counter
-  	@@counter
-  end
-
   def add(item)
-    if item.class != @type then return "This item is not of type: #{type}" end
-    @items+=[item]
-    @@counter+=1
-    return item
+    if item.class!=@type then return "This item is not of type: #{@type}" end
+    @items += [item]
+    @counter+=1
+    self
   end
 end
 
-my_list=List.new(String)
 
 
-print my_list
+
+
+
+
+
