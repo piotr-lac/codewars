@@ -12,3 +12,7 @@ def solution(pairs)
   pairs.each {|k,v| s = s << "#{k} = #{v},"}
   return s.chop
 end
+
+pairs = {a: 1, b: '2'}
+
+print solution(pairs)

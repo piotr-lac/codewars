@@ -6,8 +6,11 @@
 # to_h(animals)
 #     #=> {"cat" => "dog", "duck" => "cow"}
 
-def to_h list
-  animals.each {|x| h={x[0]=>x[1]}}
+def to_h(list)
+  h=Hash.new
+  list.each do |x|
+  h[x[0]]=x[1]
+	end
   puts h
 end
 

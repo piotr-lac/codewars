@@ -4,7 +4,7 @@
 # (In this case, all triangles must have surface greater than 0 to be accepted).
 
 def isTriangle(a,b,c)
-   return (a+b>c && a+c>b && c+b>a)? true : false
+   (a+b>c && a+c>b && c+b>a)? true : false
 end
 
-puts isTriangle(7,2,2)
+puts isTriangle(7,6,2)

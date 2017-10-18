@@ -6,7 +6,7 @@
 # Note! if n 
 
 def paperwork(n, m)
-  return n<0 || m<0 ? 0 : n*m
+  n<0 || m<0 ? 0 : n*m
 end
 
 print paperwork(5, 5)

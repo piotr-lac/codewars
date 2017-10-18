@@ -6,7 +6,7 @@
 # Note: If the number is a multiple of both 3 and 5, only count it once.
 
 def solution(number)
-	a=[0]
+	a=[]
 	(1..number-1).map {|x| a << x if (x%3==0 || x%5==0)}
 	a.reduce(:+)
 	

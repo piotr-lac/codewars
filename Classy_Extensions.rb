@@ -24,3 +24,4 @@ class Cat < Animal
 end
 
 kot = Cat.new("Miauczek")
+kot.speak

@@ -13,8 +13,7 @@
 n = 21445
 
 def descending_order(n)
-n = n.to_s.split("")
-n.sort.reverse!.join.to_i
+n.to_s.split("").sort.reverse!.join.to_i
 end
 
 print descending_order(n)
